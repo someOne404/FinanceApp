@@ -5,3 +5,6 @@ def project_list(request):
 
 def project_detail(request, project_slug):
     return render(request, 'budget/project-detail.html')
+
+def account_info(request):
+    return render(request, 'budget/account-info.html')
