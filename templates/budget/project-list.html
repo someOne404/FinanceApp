@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content%}
+<div class="container">
+    <div class="noproject-wrapper">
+        {% if user.is_authenticated %}
+        <h3 class="grey-text">Sorry, you don't have any linked accounts.</h3>
+        <a href="" class="btn btn-primary">
+            <i class="material-icons">add_circle</i>
+            <span class="bold">Add Account</span>
+        </a>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
